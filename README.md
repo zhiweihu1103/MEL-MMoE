@@ -14,7 +14,7 @@
 ## Running the code
 ### Dataset
 1. Download the datasets from [MIMIC paper](https://github.com/pengfei-luo/MIMIC).
-2. Download the data with WikiData description information from [here](https://drive.google.com/drive/folders/196zSJCy5XOmRZ995Y1SUZkGbMN922nPY?usp=sharing) and move it to the corresponding MIMIC datasets folder。
+2. Download the data with WikiData description information from [here](https://drive.google.com/drive/folders/196zSJCy5XOmRZ995Y1SUZkGbMN922nPY?usp=sharing) and move it to the corresponding MIMIC datasets folder.
 3. Create the root directory ./data and put the dataset in.
 4. Download the pretrained_weight from [clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32).
 5. Create the root directory ./checkpoint and put the pretrained_weight in.
