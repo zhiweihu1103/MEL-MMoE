@@ -1,0 +1,46 @@
+run_name: RichpediaMEL
+seed: 43
+pretrained_model: '/checkpoint/clip-vit-base-patch32'
+lr: 1e-5
+
+
+data:
+  num_entity: 160933
+  kb_img_folder: /data/RichpediaMEL/kb_image
+  mention_img_folder: /data/RichpediaMEL/mention_image
+  qid2id: /data/RichpediaMEL/qid2id.json
+  entity: /data/RichpediaMEL/kb_entity.json
+  train_file: /data/RichpediaMEL/RichpediaMEL_train.json
+  dev_file: /data/RichpediaMEL/RichpediaMEL_dev.json
+  test_file: /data/RichpediaMEL/RichpediaMEL_test.json
+
+  batch_size: 32
+  num_workers: 8
+  text_max_length: 50
+  visual_patch_length: 50
+
+  eval_chunk_size: 6000
+  eval_batch_size: 20
+  embed_update_batch_size: 512
+
+
+model:
+  input_hidden_dim: 512
+  input_image_hidden_dim: 768
+  hidden_dim: 96
+  dv: 96
+  dt: 512
+  TGLU_hidden_dim: 96
+  IDLU_hidden_dim: 96
+  CMFU_hidden_dim: 96
+  num_experts: 4
+  top_experts: 4
+
+
+trainer:
+  accelerator: 'gpu'
+  devices: 1
+  max_epochs: 20
+  num_sanity_val_steps: 0
+  check_val_every_n_epoch: 2
+  log_every_n_steps: 30
