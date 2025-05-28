@@ -39,4 +39,4 @@ If you find this code useful, please consider citing the following paper.
 }
 ```
 ## Acknowledgement
-We refer to the code of [MIMIC](https://github.com/pengfei-luo/MIMIC) and [MEL-M3EL](https://github.com/zhiweihu1103/MEL-M3EL). Thanks for their contributions.
+We refer to codes of [MIMIC](https://github.com/pengfei-luo/MIMIC) and [MEL-M3EL](https://github.com/zhiweihu1103/MEL-M3EL). Thanks for their contributions.
